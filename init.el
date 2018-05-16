@@ -35,4 +35,11 @@
 (auto-save-enable)              ;; 开启自动保存功能
 (setq auto-save-slient t)       ;; 自动保存的时候静悄悄的， 不要打扰我
 
+;; 自动打开neotree
+(neotree-toggle)
+
+;; 启动之后自动最大化
+;; https://blog.csdn.net/grey_csdn/article/details/79052984
+(add-to-list 'default-frame-alist '(fullscreen . maximized))
+
 (provide 'init)
