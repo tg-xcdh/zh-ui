@@ -27,6 +27,19 @@
    '("melpa" . "http://melpa.milkbox.net/packages/")
    t))
 
+;; 高亮匹配括号
+(show-paren-mode t)
+
+;; https://www.cnblogs.com/tuhooo/p/7020583.html
+;; 设定不产生备份文件
+(setq make-backup-files nil)
+;; 关闭自动保存
+(setq auto-save-default nil)
+;; 自动保存模式关闭
+(setq auto-save-mode nil)
+;; 不生成临时文件
+(setq-default make-backup-files nil)
+
 ;;
 ;; 自动保存
 ;; https://www.jianshu.com/p/998ceaf522d1
